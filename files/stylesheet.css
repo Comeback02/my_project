@@ -81,6 +81,8 @@
 
 	.text_footer {
 		color: #9B9B9B;
+		position: relative;
+		left: 40%;
 }
 
 	#welcome {
