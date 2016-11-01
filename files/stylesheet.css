@@ -178,8 +178,9 @@
 }
 
 	#catalog td:first-letter {
-		font-size: 120%;
-		font-family: "MS Sans Serif", Geneva, sans-serif;
+	/*	font-size: 120%;
+		font-family: "MS Sans Serif", Geneva, sans-serif; */
+		text-transform: capitalize;
 }
 
 	#catalog {
