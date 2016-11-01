@@ -87,6 +87,17 @@
 		color: #9B9B9B;
 		position: relative;
 		left: 40%;
+		padding-right: 30px;
+		padding-top: 30px;
+}
+
+#hr_2 {
+		width: 180px;
+		border: none; 
+		background: #9B9B9B; 
+		height: 1px;
+		position: relative;
+		left: 38%;
 }
 
 	#welcome {
@@ -109,13 +120,6 @@
 		padding-right: 35%;
 		text-align: justify;
 		text-indent: 3%;
-}
-
-	#hr_2 {
-		width: 220px;
-		border: none; 
-		background: #9B9B9B; 
-		height: 1px;
 }
 
 	.goods {
