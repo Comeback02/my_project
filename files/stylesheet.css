@@ -1,4 +1,82 @@
 
+/* Стили для первого уровня меню */
+
+	.menu_ul {
+		padding-left: 0;
+		width: 900px;
+}
+
+	.menu_catalog:hover > ul {
+  		display: block;
+}
+
+	.menu_hide {
+		display: none;
+		position: absolute;
+		background: linear-gradient(to top, #525252  , #000);
+		z-index: 10;
+		padding-left: 0;
+		list-style-type: none;
+}
+
+	.menu_ul > li {
+		position: relative;
+		display: inline-block;
+}
+
+	.header .menu_ul li > a {
+		display: inline-block;
+		padding: 15px 0; 
+		width: 297px;
+		height: 20px;
+}
+
+	.header a {
+	    text-align: center; 
+	    vertical-align: middle;
+	    text-decoration: none;
+	    text-transform: uppercase;
+	    color: #fff;
+}
+
+	.header a:hover {
+		background-color:#53C6F9;
+}
+
+	.arrow {
+		float: right;
+		padding: 0 40px 0 0;
+	}
+
+/* Стили второго уровня меню */
+
+	.menu_hide li ul li {
+		display: none;
+		position: relative;
+		left: 257px;
+		bottom:50px;
+		z-index: 5;
+		width: 297px;
+		background-color: #171717;
+}
+
+
+	.menu_hide li ul  {    
+		height: 0px;    /* Без этой строки не переключается со второго уровня меню на первый, хз почему */
+		font-size: 14px;
+		vertical-align: middle;
+
+}
+
+	.menu_hide li:hover ul li {
+		display: inline-block;
+}
+
+	.menu_hide li:hover ul {
+		position: absolute;
+}
+
+
 /* Общие стили */
 
 	body {
@@ -11,40 +89,11 @@
 		width: 900px;
 }
 
-	.header {
-		background: url(../images/black_background.jpg);
-		background-size: 200%;
-		width: 100%;
+	.header { 
+		height: 50px;
 		box-shadow: 0px 2px 1px 0px rgba(0,0,0,0.5);
-}
+		background: linear-gradient(to top, #000 ,#525252);
 
-	.header {
-	    display: table;
-	    position: relative;
-	    width: 100%; 
-	    height: 50px;
- }
-
-	.header a {
-	    display: table-cell;
-	    text-align: center; 
-	    vertical-align: middle;
-	    text-decoration: none;
-	    text-transform: uppercase;
-	    color: #fff;
-}
-
-	.header a:hover {
-		color: #53C6F9;
-		text-decoration: underline;
-}
-
-	.header a:nth-child(even) {
-		border: 1px;
-		border-color: #555;
-		border-style: solid;
-		border-top-style: none;
-		border-bottom-style: none;
 }
 
 	.link_1:hover {
@@ -79,8 +128,7 @@
 
 	.footer {
 		padding: 10px;		
-		background: url(../images/black_background.jpg);
-		background-size: 200%;
+		background-color: #171717;
 }
 
 	.text_footer {
@@ -116,22 +164,6 @@
 		font-family: Verdana, Geneva, sans-serif;
 		text-align: justify;
 		margin: 60px 30px 0 0;
-}
-
-	#note {
-		margin: 120px 20px 0 40px;
-		padding: 10px;
-		font-size: 10px;
-		font-family: Verdana, Geneva, sans-serif;
-		text-align: justify;
-		width: 300px;
-		border: 1px solid #848484;
-}
-
-	#note:hover {
-		border: 1px solid #53C6F9;
-		color: #fff;
-		background-color: #53C6F9;
 }
 
 	.goods {
@@ -176,7 +208,6 @@
 		list-style-position: inside;
 		font-size: 14px;
 }
-
 
 
 	/* Стили для catalog_sneakers */
